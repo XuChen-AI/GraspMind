@@ -293,6 +293,8 @@ The multi-agent approach represented by GraspMind offers a more practical, safe,
 
 GraspMind implements a sophisticated multi-agent collaborative framework where five specialized AI agents work together to transform natural language instructions into safe, functional robotic grasping actions. Each agent is optimized for its specific domain while maintaining seamless communication through a structured message-passing interface.
 
+![Framework](Github/Framework.png)
+
 ### Five-Agent Collaborative Workflow
 
 ```
