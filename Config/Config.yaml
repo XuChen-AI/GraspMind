@@ -1,0 +1,39 @@
+# 全局配置
+Global:
+  OpenRouterAPIKey: &openrouter_api_key "OPENROUTER_API_KEY"  # OpenRouter API密钥
+  OpenRouterBaseURL: &openrouter_base_url "https://openrouter.ai/api/v1/chat/completions"  # OpenRouter基础URL
+
+# ObjectDetectionAgent API配置
+ObjectDetectionAgent:
+  api_key: *openrouter_api_key  # 引用全局API密钥
+  base_url: *openrouter_base_url  # 引用全局基础URL
+  model: "qwen/qwen2.5-vl-32b-instruct:free"
+
+# RequirementUnderstandingAgent API配置
+RequirementUnderstandingAgent:
+  api_key: *openrouter_api_key  # 引用全局API密钥
+  base_url: *openrouter_base_url  # 引用全局基础URL
+  model: "deepseek/deepseek-chat:free"
+  max_tokens: 2000
+  temperature: 0.7
+
+# ItemDescriptionAgent API配置
+ItemDescriptionAgent:
+  api_key: *openrouter_api_key  # 引用全局API密钥
+  base_url: *openrouter_base_url  # 引用全局基础URL
+  model: "qwen/qwen2.5-vl-32b-instruct:free"
+
+
+# SafetyOfficerAgent API配置
+SafetyOfficerAgent:
+  api_key: *openrouter_api_key  # 引用全局API密钥
+  base_url: *openrouter_base_url  # 引用全局基础URL
+  model: "deepseek/deepseek-chat:free"
+  max_tokens: 2000
+  temperature: 0.7
+
+# PreciseSegmentationAgent API配置
+PreciseSegmentationAgent:
+  api_key: *openrouter_api_key  # 引用全局API密钥
+  base_url: *openrouter_base_url  # 引用全局基础URL
+  model: "qwen/qwen2.5-vl-32b-instruct:free"

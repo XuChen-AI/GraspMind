@@ -1,0 +1,13 @@
+{
+  "segmentation_results": [
+    {
+      "bbox_2d": [
+        128,
+        426,
+        428,
+        839
+      ],
+      "label": "Handle"
+    }
+  ]
+}
